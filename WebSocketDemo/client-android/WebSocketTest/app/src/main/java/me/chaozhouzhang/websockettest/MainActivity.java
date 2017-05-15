@@ -16,7 +16,16 @@ import de.tavendo.autobahn.WebSocketException;
 import de.tavendo.autobahn.WebSocketHandler;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String WS_URL = "ws://192.168.3.41:8080/chatServer";
+    /**
+     * 公司
+     */
+//    private static final String WS_URL = "ws://192.168.3.41:8080/chatServer";
+
+    /**
+     * 家里
+     */
+    private static final String WS_URL = "ws://192.168.0.2:8080/chatServer";
+
     WebSocketConnection webSocketConnection = new WebSocketConnection();
     @BindView(R.id.edt_user)
     EditText edtUser;
